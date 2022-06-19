@@ -1,0 +1,43 @@
+main, #spell-card-container {
+  display: flex;
+}
+
+body {
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+
+header {
+  font-family: 'DotGothic16', sans-serif;
+  text-align: center;
+  color:#cc1100;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+#spell-card-container {
+  flex-direction: column;
+  width: 80vw;
+  margin-right: auto;
+}
+
+#side-options {
+  padding: 10px;
+  margin: 10px;
+  margin-left: auto;
+}
+
+.option-select, .spell-info {
+  flex-direction: row;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.spell-card {
+  border: thick solid #cc1100;
+  padding: 10px;
+  margin: 10px;
+}

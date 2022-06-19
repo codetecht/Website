@@ -1,0 +1,130 @@
+main, #spell-card-container, #mon-card-container, #spell-search-view, #roll-log, #dice-rollers,
+#mon-search-view, #lookup-view, .side-options, header, nav > ul, .dice-options, .dice-roller {
+  display: flex;
+}
+
+#lookup-view {
+  margin-top: 10px;
+}
+
+#roll-log-view {
+  margin: auto;
+}
+
+body {
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+
+nav > ul {
+  justify-content: center;
+  flex-flow: row;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav span, .mon-card {
+  cursor: pointer;
+}
+
+nav > ul > li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+header {
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #c2c2c2;
+  font-family: 'DotGothic16', sans-serif;
+  text-align: center;
+  color:#cc1100;
+  /* Prevents scrollbar from shifting header/footer
+     Source: https://stackoverflow.com/a/30293718 */
+  padding-left: calc(100vw - 100%);
+}
+
+#dice-rollers{
+  align-items: center;
+}
+
+.dice-roller {
+  flex-direction: column;
+  margin: auto 4px auto 4px;
+}
+
+.dice-options {
+  flex-direction: row;
+}
+
+.dice-options > p {
+  margin: 4px 0 0 0;
+}
+
+.dice-options > input {
+  width: 3em;
+  height: 2em;
+}
+
+.roll-results {
+  margin: 0 0 0 0;
+  font-size: 1.5em;
+}
+
+#roll-log {
+  flex-direction: column-reverse;
+  width: 75%;
+}
+
+
+
+h2 {
+  text-decoration: underline;
+}
+
+p {
+  white-space: pre-wrap;
+}
+
+#min-cr, #max-cr {
+  width: 3em;
+}
+
+label[for='min-cr'], label[for='max-cr'] {
+  padding-top: 10px;
+}
+
+#spell-card-container, #mon-card-container {
+  flex-direction: column;
+  width: 80vw;
+  margin-right: auto;
+}
+
+#lookup-select {
+  position: relative;
+  left: 85px;
+}
+
+.side-options {
+  padding: 10px;
+  margin: 10px;
+  margin-left: auto;
+  flex-direction: column;
+}
+
+.option-select, .card-info {
+  flex-direction: row;
+}
+
+#lookup-select {
+  align-self: baseline;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.spell-card, .mon-card {
+  border: thick solid #cc1100;
+  padding: 10px;
+  margin: 10px;
+}

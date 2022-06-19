@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!-- Comment -->
+<html>
+<head>
+  <meta charset='utf-8'>
+  <link rel='stylesheet' href='/nc_assets/css/dndspeller.css'>
+  <script src='/nc_assets/scripts/dndspeller.js'></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
+  <title>Search D&D Spells</title>
+</head>
+<body>
+  <header>
+    <h1>D&D Spell Search (5e)</h1>
+  </header>
+  <main>
+    <section id='side-options'>
+      <h2>Filters</h2>
+
+      <!-- Spell school filter options -->
+      <div id='school-options'>
+        <h3>School</h3>
+        <button id='check-schools-btn'>Select All</button>
+        <div class='option-select'>
+          <input type='checkbox' id='abjuration' name='abjuration'>
+          <label for='abjuration'>Abjuration</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='conjuration' name='conjuration'>
+          <label for='conjuration'>Conjuration</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='divination' name='divination'>
+          <label for='divination'>Divination</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='enchantment' name='enchantment'>
+          <label for='enchantment'>Enchantment</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='evocation' name='evocation'>
+          <label for='evocation'>Evocation</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='illusion' name='illusion'>
+          <label for='illusion'>Illusion</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='necromancy' name='necromancy'>
+          <label for='necromancy'>Necromancy</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='transmutation' name='transmutation'>
+          <label for='transmutation'>Transmutation</label>
+        </div>
+      </div>
+
+      <!-- Spell level filter options -->
+      <div id='level-options'>
+        <h3>Level</h3>
+        <button id='check-levels-btn'>Select All</button>
+        <div class='option-select'>
+          <input type='checkbox' id='level0' name='level0'>
+          <label for='level0'>Cantrip</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='level1' name='level1'>
+          <label for='level1'>1</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='level2' name='level2'>
+          <label for='level1'>2</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='level3' name='level3'>
+          <label for='level1'>3</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='level4' name='level4'>
+          <label for='level1'>4</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='level5' name='level5'>
+          <label for='level1'>5</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='level6' name='level6'>
+          <label for='level1'>6</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='level7' name='level7'>
+          <label for='level1'>7</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='level8' name='level8'>
+          <label for='level1'>8</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='level9' name='level9'>
+          <label for='level1'>9</label>
+        </div>
+      </div>
+
+      <!-- Spell class filter options -->
+      <div id='class-options'>
+        <h3>Class</h3>
+        <button id='check-classes-btn'>Select All</button>
+        <div class='option-select'>
+          <input type='checkbox' id='barbarian' name='barbarian'>
+          <label for='barbarian'>Barbarian</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='bard' name='bard'>
+          <label for='bard'>Bard</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='cleric' name='cleric'>
+          <label for='cleric'>Cleric</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='druid' name='druid'>
+          <label for='druid'>Druid</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='fighter' name='fighter'>
+          <label for='fighter'>Fighter</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='monk' name='monk'>
+          <label for='monk'>Monk</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='paladin' name='paladin'>
+          <label for='paladin'>Paladin</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='ranger' name='ranger'>
+          <label for='ranger'>Ranger</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='rogue' name='rogue'>
+          <label for='rogue'>Rogue</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='sorcerer' name='sorcerer'>
+          <label for='sorcerer'>Sorcerer</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='warlock' name='warlock'>
+          <label for='warlock'>Warlock</label>
+        </div>
+        <div class='option-select'>
+          <input type='checkbox' id='wizard' name='wizard'>
+          <label for='wizard'>Wizard</label>
+        </div>
+      </div>
+
+      <!-- Search bar -->
+      <!-- <button id='search-btn'>Search</button>
+      <input type='search' id='search-bar'> -->
+    </section>
+
+    <!-- Populated on page load -->
+    <section id='spell-card-container'>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+
+
+</body>
+</html>

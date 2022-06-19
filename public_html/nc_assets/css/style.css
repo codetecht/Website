@@ -1,0 +1,132 @@
+:root {
+  --font-body: 'Space Grotesk';
+  --font-heading: 'Montserrat';
+  --font-decorative: 'Euphoria Script';
+  --color-dark: #171717;
+  --color-med-dark: #cc1100;
+  --color-med-light: #989898;
+  --color-light: #EDEDED;
+}
+
+body {
+  font-family: var(--font-body), courier;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  margin: 0px auto 0px auto;
+}
+
+.hidden {
+  display: none !important;
+}
+
+a {
+  color: var(--color-dark);
+}
+
+h2 {
+  font-family: var(--font-decorative), cursive;
+  font-size: 30pt;
+  align-self: center;
+}
+
+.info-card {
+  flex-direction: row;
+  align-items: center;
+}
+
+.info-img {
+  flex-direction: column;
+}
+
+.info-img > img {
+  border: thick double var(--color-med-dark);
+  width: 35vw;
+  height: auto;
+  margin-right: 10px;
+}
+
+.info-text {
+  margin-left: 10px;
+}
+
+header, footer {
+  background-color: var(--color-med-light);
+  /* Prevents scrollbar from shifting header/footer
+     Source: https://stackoverflow.com/a/30293718 */
+  padding-left: calc(100vw - 100%);
+}
+
+nav, #nav-links, footer, .info-card {
+  display: flex;
+}
+
+nav, #nav-links, footer {
+  justify-content: center;
+}
+
+header h1 {
+  font-family: var(--font-heading);
+}
+
+header h1, header span {
+  color: var(--color-dark);
+}
+
+nav > hr {
+  margin: 10px;
+}
+
+#nav-links {
+  cursor: pointer;
+  justify-content: flex-start;
+  list-style-type: none;
+  padding: 0;
+}
+
+#nav-links > li {
+  margin: auto 5px auto 5px;
+}
+
+#home-view, #about-view, #resume-view, #GoL-view {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  width: 80%;
+  margin: 10%;
+}
+
+/*     Home     */
+#home-view > h2 {
+  font-size: 64;
+}
+
+#home-view > p {
+  text-align: center;
+}
+/* ------------ */
+
+/*    Resume    */
+#resume-view > embed {
+  height: 800px;
+}
+
+embed {
+  border: thick solid var(--color-med-dark);
+}
+/* ------------ */
+
+/* Game of Life */
+canvas {
+  width: 80vw;
+  height: auto;
+  border: thick solid var(--color-med-dark);
+}
+
+.alive-tile {
+  background-color: rgb(253, 253, 216);
+}
+
+.dead-tile {
+  background-color: black;
+}
+/* ------------ */
